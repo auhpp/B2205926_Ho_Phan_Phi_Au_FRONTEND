@@ -23,6 +23,7 @@ export default {
         .string()
         .email("E-mail không hợp lệ")
         .max(50, "Tên có tối đa 50 ký tự"),
+      address: yup.string().max(100, "Địa chỉ tối đa 100 ký tự."),
       phone: yup
         .string()
         .matches(
